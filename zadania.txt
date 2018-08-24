@@ -1,0 +1,24 @@
+I Testy jednostkowe
+
+1. Dokończ implementację metod kalkulatora. Uzupełnij go o metody odejmowania i mnożenia. Napisz testy jednostkowe dla
+tych metod. Pamiętaj o wszystkich przypadkach testowych.
+
+2.
+	 -> W pakiecie services znajduje się klasa Product. Skończ implementować tą klasę. Zadecyduj czy chcesz aby cena produktu
+		wyrażona była w typie BigDouble, czy może Money.  https://www.baeldung.com/java-money-and-currency
+	 -> ProduktStore reprezentuje bazę danych produktów. Zawiera ona mapę produktów, gdzie ich kluczem jest unikalna liczba całkowita
+	    Skończ implementację klasy ProductStore dopisz metody, które pozwalają na dodawanie, usuwanie, modyfikowanie produktu.
+	 -> ProductService zawiera użyteczne metody, które pozwalają na modyfikację zawartości product
+
+	 -> !!! Napisz testy jednostkowe dla klasy ProductService
+
+II
+Testy parametryzowane
+
+1. Napisz testy parametryzowane dla kalkulatora oraz dla ProductService
+
+III
+Testowanie wyjątków
+
+1. Napisz metodę addProduct i removeProduct, tak by zamiast wartości boolean wyrzucany był wyjątek jeżeli operacja nie powiedzie się sukcesem.
+2. Napisz testy jednostkowe, testujące zachowanie rzucanych wyjątków.
