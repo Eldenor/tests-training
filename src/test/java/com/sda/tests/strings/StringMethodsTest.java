@@ -6,17 +6,18 @@ import org.junit.jupiter.params.provider.ValueSource;
 
 import java.util.stream.Stream;
 
-import static junit.framework.TestCase.assertTrue;
+import static org.junit.jupiter.api.Assertions.assertTrue;
 
 public class StringMethodsTest {
 
     private StringMethods stringMethods;
 
     @ParameterizedTest
-    @ValueSource(strings = { "racecar", "radar", "able was I ere I saw elba" })
+    @ValueSource(strings = { "racecar", "radadr", "able was I ere I saw elba" })
     void isPalindromeCheck(String candidate) {
         StringMethods stringMethods = new StringMethods();
-        assertTrue(stringMethods.isPalindrome(candidate));
+        boolean palindrome = stringMethods.isPalindrome(candidate);
+        assertTrue(palindrome);
     }
 
     @ParameterizedTest
@@ -29,5 +30,4 @@ public class StringMethodsTest {
     static Stream<String> testWithSimpleMethodSourceHavingNoValue() {
         return Stream.of("foof", "barrab");
     }
-
 }

@@ -1,0 +1,13 @@
+I
+Test Driven Development
+
+Napisz testy do metody która przyjmuje tablicę wartości int i zwraca środkową wartość.
+Np. dla {5, 2, 1, 4, 3} będzie to 1, a dla {1, 2, 3, 4} będzie to 2. Dla pustej tablicy program zwróci -1. Do sortowania możemy wykorzystać metodę Arrays.sort().
+Po napisaniu testów zaimplementuj tę metodę.
+Po sprawieniu, że wszystkie testy będą działać postaraj się zrefaktoryzować kod, czyniąc go bardziej czytelnym.
+
+II
+Asserje
+
+III
+Mokowanie

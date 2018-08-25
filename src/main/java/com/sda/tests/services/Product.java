@@ -6,7 +6,7 @@ import java.util.Objects;
 
 public class Product {
     private String name;
-    private Money price; //czy to mam zaminić na double ???
+    private Money price;
 
     public Product(String name, Money price) {
         this.name = name;
