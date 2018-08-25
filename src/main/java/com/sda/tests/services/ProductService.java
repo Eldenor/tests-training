@@ -53,6 +53,10 @@ public class ProductService {
         return null;
     }
 
+    public List<Product> getProductWithIds(long... ids){
+        return null;
+    }
+
 
 // zaimplementuj cenę jako BigDecimal, jeżeli nie chcesz poznawać biblioteki Money
 //    public BigDecimal getSumPriceOfAllProducts(){
