@@ -1,5 +1,6 @@
 package com.sda.tests.services;
 
+import java.util.LinkedList;
 import java.util.List;
 
 public class Basket {
@@ -25,5 +26,9 @@ public class Basket {
 
     public void setProductList(List<Product> productList) {
         this.productList = productList;
+    }
+
+    public void addProductToBasket(List<Product> products){
+        productList.addAll(products);
     }
 }

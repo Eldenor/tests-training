@@ -91,6 +91,7 @@ public class AssertoinTest {
 
     @Test
     void exeptionAssertions() {
+
         assertThatThrownBy(() -> Math.multiplyExact(9999999, 9999999))
                 .hasMessage("integer overflow")
                 .isInstanceOf(ArithmeticException.class);
