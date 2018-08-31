@@ -1,6 +1,5 @@
 package com.sda.tests.shipments;
 
-import javax.swing.text.html.Option;
 import java.util.Optional;
 
 public class ShipmentService {
@@ -18,7 +17,7 @@ public class ShipmentService {
     }
 
     public Optional<Shipment> sendToUser(User user, Location location){
-        if(locationService.isLocationAllowd(location)){
+        if(!locationService.isLocationAllowd(location)){
             return Optional.empty();
         }
 
