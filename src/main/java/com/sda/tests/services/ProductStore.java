@@ -14,8 +14,6 @@ public class ProductStore {
         return allProducts;
     }
 
-    // tutaj dodaj podstawo
-
     public boolean add(Long id, Product product){
         if(allProducts.containsKey(id)){
             return false;

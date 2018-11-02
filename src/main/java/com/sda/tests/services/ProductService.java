@@ -29,26 +29,9 @@ public class ProductService {
     }
 
     public Money getSumPriceOfAllProducts() {
-        Map<Long, Product> allProducts = productStore.getAllProducts();
-
-        Collection<Product> allProductsCollection = allProducts.values();
-
-        Money sumPrice = Money.of(0, "USD");
-
-        for (Product product : allProductsCollection) {
-            Money priceOfProduct = product.getPrice();
-            sumPrice = sumPrice.add(priceOfProduct);
-        }
-        return sumPrice;
+        return null;
     }
 
-    public Money getSumPriceOfAllProducts2() {
-        return productStore.getAllProducts().values()
-                .stream()
-                .map(Product::getPrice)
-                .reduce(Money::add)
-                .orElse(Money.of(0, "USD"));
-    }
 
     public Money getPriceOfProducts(List<Product> products) {
         return null;

@@ -24,15 +24,6 @@ public class ProductServiceWithMocksTest {
     @Test
     void test(){
 
-        Product product = new Product("Chleb", Money.of(1, "USD"));
-
-        //doReturn(product).when(mockProductStore.add(1L, product));
-
-        when(mockProductStore.add(1L, product)).thenReturn(true);
-
-        productService.addProductToStore(1L, product);
-
-        verify(mockProductStore).add(anyLong(), any());
     }
 
 }
