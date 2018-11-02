@@ -1,7 +1,5 @@
 package com.sda.tests.calculator;
 
-import sun.text.resources.cldr.zh.FormatData_zh_Hans_SG;
-
 class Calculator {
 
     int safeAdd(int a, int b){
