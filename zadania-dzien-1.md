@@ -3,28 +3,28 @@
 1. Dokończ implementację metod kalkulatora. Uzupełnij go o metody odejmowania i mnożenia. Napisz testy jednostkowe dla
 tych metod.
     W trakcie pisania testów wykonaj eksperymenty z adnotacjami JUnit 5 (https://junit.org/junit5/docs/current/user-guide/#writing-tests-annotations) tj.
-    ->@RepeatedTest
-    ->@DisplayName
-    ->@BeaforeEach/@AfterEach
-    ->@Disabled
+    * @RepeatedTest
+    * @DisplayName
+    * @BeaforeEach/@AfterEach
+    * @Disabled
     
 2. Zaimplementuj i przetestuj funkcjonalność systemu zarządzającego sklepem internetowym.  
-     -> W pakiecie services znajduje się klasa Product. Skończ implementować tą klasę. Zadecyduj czy chcesz aby cena produktu
+     * W pakiecie services znajduje się klasa Product. Skończ implementować tą klasę. Zadecyduj czy chcesz aby cena produktu
 		wyrażona była w typie BigDouble, czy może Money.  https://www.baeldung.com/java-money-and-currency
-	 -> ProduktStore reprezentuje bazę danych produktów. Zawiera ona mapę produktów, gdzie ich kluczem jest unikalna liczba całkowita
+	 * ProduktStore reprezentuje bazę danych produktów. Zawiera ona mapę produktów, gdzie ich kluczem jest unikalna liczba całkowita
 	    Skończ implementację klasy ProductStore dopisz metody, które pozwalają na dodawanie, usuwanie, modyfikowanie produktu.
-	 -> ProductService zawiera użyteczne metody, które pozwalają na modyfikację zawartości product
+	 * ProductService zawiera użyteczne metody, które pozwalają na modyfikację zawartości product
 
-	 -> !!! Napisz testy jednostkowe dla klasy ProductService
+	 * !!! Napisz testy jednostkowe dla klasy ProductService
 
 # Testy parametryzowane
 
 1. Napisz testy parametryzowane dla kalkulatora oraz dla ProductService. Postaraj się wykorzystać wszystkie poznane możliwości
 dostarczania danych do testów parametryzowanych.
-    ->@ValueSource
-    ->@MethodSource
-    ->@CsvSource
-    ->@ArgumentSource
+    * @ValueSource
+    * @MethodSource
+    * @CsvSource
+    * @ArgumentSource
 
 
 # Testowanie wyjątków
