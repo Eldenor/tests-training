@@ -43,18 +43,10 @@ public class UserValidatorTest {
 
 
     //TODO 1. Napisz metodę testową, która przyjmuje jako parametry obiekty typi User i UserValidator
-    //TODO 2. Wywołaj testowaną funkcję validateUser z klasy UserValidator
-    //TODO 3. Porównaj za pomocą assercji dane zwrócone przez UserValidator z obiektem UserValidator, który przekazujesz do testu jako parametr metody.
+    //TODO 2. Dodaj adnotacja @ParametrizedTest i @MethodSource("stringIntAndListProvider")
+    //TODO 3. Wywołaj testowaną funkcję validateUser z klasy UserValidator
+    //TODO 4. Porównaj za pomocą assercji dane zwrócone przez UserValidator z obiektem UserValidator, który przekazujesz do testu jako parametr metody.
 
-
-    @ParameterizedTest
-    @MethodSource("stringIntAndListProvider")
-    public void validateUserParametrized(User user, UserValidationResult expectedResult) {
-        UserValidationResult actualResult = userValidator.validateUser(user);
-
-        assertEquals(expectedResult, actualResult);
-
-    }
 
     static Stream<Arguments> stringIntAndListProvider() {
         return Stream.of(
