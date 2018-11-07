@@ -26,5 +26,13 @@ class BasketServiceTest {
     @Test
     void addProductToBasket() {
 
+        Product product = new Product("telewizor", Money.of(122, "USD"));
+
+        when(productServiceMock.getProductsForIds(1)).thenReturn(Collections.singletonList(product));
+
+        basketService.addProductToBasket(1);
+
+        verify(productServiceMock).getProductsForIds(1);
+
     }
 }
