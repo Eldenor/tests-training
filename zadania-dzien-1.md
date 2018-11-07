@@ -7,8 +7,8 @@ tych metod.
     * @DisplayName
     * @BeaforeEach/@AfterEach
     * @Disabled
-    
-2. Zaimplementuj i przetestuj funkcjonalność systemu zarządzającego sklepem internetowym.  
+
+2. Zaimplementuj i przetestuj funkcjonalność systemu zarządzającego sklepem internetowym.
      * W pakiecie services znajduje się klasa Product. Skończ implementować tą klasę. Zadecyduj czy chcesz aby cena produktu
 		wyrażona była w typie BigDouble, czy może Money.  https://www.baeldung.com/java-money-and-currency
 	 * ProduktStore reprezentuje bazę danych produktów. Zawiera ona mapę produktów, gdzie ich kluczem jest unikalna liczba całkowita
