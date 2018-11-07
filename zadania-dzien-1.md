@@ -19,7 +19,7 @@ tych metod.
 
 # Testy parametryzowane
 
-1. Napisz testy parametryzowane dla kalkulatora oraz dla ProductService. Postaraj się wykorzystać wszystkie poznane możliwości
+1. Napisz testy parametryzowane dla kalkulatora. Postaraj się wykorzystać wszystkie poznane możliwości
 dostarczania danych do testów parametryzowanych.
     * @ValueSource
     * @MethodSource
@@ -34,6 +34,3 @@ dostarczania danych do testów parametryzowanych.
 
 2. Zastanów się, co jakie są przypadki graniczne dla klasy kalkulator. Zastanów się jak metody z klasy Math takie jak toIntExact, addExact, subtractExact
    mogą być przydatne w pisaniu klakulatora.
-
-2. Napisz metodę addProduct i removeProduct, tak by zamiast wartości boolean wyrzucany był wyjątek jeżeli operacja nie powiedzie się sukcesem.
-   Napisz testy jednostkowe, testujące zachowanie rzucanych wyjątków.
