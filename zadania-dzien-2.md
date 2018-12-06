@@ -37,9 +37,9 @@ Po sprawieniu, że wszystkie testy będą działać postaraj się zrefaktoryzowa
 
 II
 Assercje
-	1. Zrefaktoruj testy swoich klas tak aby używać adnotacji z AssertJ.
+	1. Zrefaktoruj testy swoich klas tak aby używać adnotacji z AssertJ. Staraj się sam odkryć jak najwięcej przydatnych assercji.
 
 III
 Mokowanie
-	1. Napisz przypadki testowe dla ProductSerivce. Tym razem klasa ProduckStore powinna być mockiem, tak by testy
-	były niezależne od siebie.
+	1. W pakiecie znajduje się klasa whetaer service. Napisz klasę, Wheter Client, która będzie zwracać statystyki pogodowe. W testach
+	stwórz mock serwisu, tak by testować jednostkowo metody swojej klasy.
