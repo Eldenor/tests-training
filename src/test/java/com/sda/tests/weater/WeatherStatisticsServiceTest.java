@@ -15,13 +15,14 @@ import static org.mockito.Mockito.when;
 
 class WeatherStatisticsServiceTest {
 
-    WeatherService weatherService = mock(WeatherService.class);
-
     WeatherStatisticsService weatherStatisticsService;
+
+    WeatherService weatherService = mock(WeatherService.class);
 
     @BeforeEach
     public void setUp() {
         when(weatherService.getTemperatureList(any())).thenReturn(Arrays.asList(1d, 2d));
+
         weatherStatisticsService = new WeatherStatisticsService(weatherService);
     }
 

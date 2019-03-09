@@ -10,7 +10,7 @@ class WeatherServiceTest {
 
     @Test
     public void test() {
-        Double wroclaw = weatherService.rainForecastSum("Wroclaw");
+        List<Double> wroclaw = weatherService.getTemperatureList("Wroclaw");
         System.out.println(wroclaw);
     }
 }

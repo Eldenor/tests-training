@@ -15,6 +15,13 @@ public class Wheater {
         this.rainVolume = rainVolume;
     }
 
+    public Wheater(long timestamp, double temperature, double windSpeed, int clouds) {
+        this.timestamp = timestamp;
+        this.temperature = temperature;
+        this.windSpeed = windSpeed;
+        this.clouds = clouds;
+    }
+
     public Wheater() {
 
     }

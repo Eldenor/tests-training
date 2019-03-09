@@ -56,12 +56,17 @@ public class WeatherService {
                     jsonNode.getJSONObject("main").getDouble("temp"),
                     jsonNode.getJSONObject("wind").getDouble("speed"),
                     jsonNode.getJSONObject("clouds").getInt("all"),
-                    jsonNode.getJSONObject("rain").getDouble("3h")
+                    jsonNode.getJSONObject("rain").has("3h") ? jsonNode.getJSONObject("rain").getDouble("3h") : 0
             );
         } catch (JSONException e) {
             e.printStackTrace();
             return new Wheater();
         }
+    }
+
+    public static void main(String[] args) {
+        WeatherService weatherService = new WeatherService();
+        System.out.println(weatherService.getWeatherData("Rzeszów"));
     }
 
 }
